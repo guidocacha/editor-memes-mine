@@ -60,6 +60,7 @@ const Meme = () => {
                             <option value="3">Señora</option>
                             <option value="4">Calamardo</option>
                             <option value="5">Niña</option>
+                            <option value="6">Alberto</option>
                         </select>
                     </div>
                     <div className='setting'>
