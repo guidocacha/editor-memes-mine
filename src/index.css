@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
+body {
+  color: #487cc7;
+  background-color: #e0e0e0;
+}
 
-.todo{
+.todo {
   text-align: center;
   font-family: 'Barlow', sans-serif;
 }
@@ -10,43 +14,115 @@
   display: flex;
 }
 
-.titulo{
-  text-align: center;
-}
-
-.contenedor-meme{
-  width: 45%;
-  height: 70vh;
-  border: 1px solid red;
+.titulo {
   margin: auto;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  width: fit-content;
+  /* neumorphism */
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
 }
 
-.contenedor-settings{
+.contenedor-meme {
   width: 45%;
   height: 70vh;
   /* border: 1px solid red; */
-  margin: auto;
+  margin: auto 2rem auto auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  /* neumorphism */
+  /* border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff; */
+}
+
+.contenedor-settings {
+  width: 20%;
+  height: 70vh;
+  /* border: 1px solid red; */
+  margin: auto auto auto 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 1rem;
+  /* neumorphism */
+  border-radius: 1rem;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
 }
 
+.setting {
+  /* neumorphism */
+  /* border-radius: 19px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff; */
+  /* --- */
+  width: 70%;
+  margin: auto;
+  padding: .6rem;
+}
+
+
+.set {
+  padding: .3rem .6rem;
+  border: none;
+  /* neumorphism */
+  border-radius: 9px;
+  background: #e0e0e0;
+  box-shadow: inset 20px 20px 60px #bebebe,
+    inset -20px -20px 60px #ffffff;
+}
+
+.set-size {
+  margin: auto .5em;
+  width: 2rem;
+  font-family: 'Barlow', sans-serif;
+  color: #487cc7;
+  font-size: 1.3rem;
+  font-weight: 1000;
+  border: none;
+  /* neumorphism */
+  border-radius: 9px;
+  background: #e0e0e0;
+  box-shadow: inset 20px 20px 60px #bebebe,
+    inset -20px -20px 60px #ffffff;
+}
+
+
 .btn-descargar {
-  padding: 1rem;
+  font-family: 'Barlow', sans-serif;
+  color: #487cc7;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: .1rem;
+  padding: 1rem 3rem;
   margin-top: 2rem;
-  border-radius: 1rem;
-  /* border: none; */
+  /* border-radius: 1rem; */
+  border: none;
+  /* neumorphism */
+  border-radius: 19px;
+  background: #e0e0e0;
+  box-shadow: 24px 24px 48px #bebebe,
+    -24px -24px 48px #ffffff;
 }
 
 .abajo {
   position: relative;
   top: 80%;
 }
+
 .centro {
   position: relative;
   top: 45%;
 }
+
 .arriba {
   position: relative;
   top: 0%;
