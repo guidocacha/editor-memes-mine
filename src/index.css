@@ -8,19 +8,18 @@ body {
 .todo {
   text-align: center;
   font-family: 'Barlow', sans-serif;
+  margin-bottom: 0;
 }
 
 .contenedor {
-  display: flex;
+  display: flex
 }
 
 .titulo {
   margin: auto;
   margin-bottom: 3rem;
   padding: 1rem;
-  width: fit-content;
   /* neumorphism */
-  border-radius: 10px;
   background: linear-gradient(145deg, #cacaca, #f0f0f0);
   box-shadow: 20px 20px 60px #bebebe,
     -20px -20px 60px #ffffff;
@@ -29,8 +28,7 @@ body {
 .contenedor-meme {
   width: 45%;
   height: 70vh;
-  /* border: 1px solid red; */
-  margin: auto 2rem auto auto;
+  margin: auto 4rem auto auto;
   padding: 1rem;
   border-radius: 1rem;  
 }
@@ -38,12 +36,11 @@ body {
 .contenedor-settings {
   width: 20%;
   height: 70vh;
-  /* border: 1px solid red; */
   margin: auto auto auto 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 1rem;
   /* neumorphism */
   border-radius: 1rem;
@@ -53,12 +50,6 @@ body {
 }
 
 .setting {
-  /* neumorphism */
-  /* border-radius: 19px;
-  background: #e0e0e0;
-  box-shadow: 20px 20px 60px #bebebe,
-    -20px -20px 60px #ffffff; */
-  /* --- */
   width: 70%;
   margin: auto;
   padding: .6rem;
@@ -99,10 +90,9 @@ body {
   letter-spacing: .1rem;
   padding: 1rem 3rem;
   margin-top: 2rem;
-  /* border-radius: 1rem; */
   border: none;
   /* neumorphism */
-  border-radius: 19px;
+  border-radius: 9px;
   background: #e0e0e0;
   box-shadow: 24px 24px 48px #bebebe,
     -24px -24px 48px #ffffff;
@@ -110,7 +100,7 @@ body {
 
 .abajo {
   position: relative;
-  top: 80%;
+  top: 82%;
 }
 
 .centro {
@@ -120,5 +110,10 @@ body {
 
 .arriba {
   position: relative;
-  top: 0%;
+  top: -0%;
+}
+
+.footer {
+  text-align: end;
+  margin-top: 0;
 }

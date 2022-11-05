@@ -6,9 +6,9 @@ const Meme = () => {
 
     const [imgmeme, setImgmeme] = useState(1);
     const [textmeme, setTextmeme] = useState();
-    const [colortexto, setColortexto] = useState();
+    const [colortexto, setColortexto] = useState("#000000");
     const [alineartextoY, setAlineartextoY] = useState("arriba");
-    let [tamaño, setTamaño] = useState(2);
+    const [tamaño, setTamaño] = useState(2);
 
     const cambiarImg = e => {
         setImgmeme(e.target.value);
@@ -24,9 +24,9 @@ const Meme = () => {
     }
     const cambiarTamaño = e => {
         if (e.target.value === "+") {
-            setTamaño(tamaño += .5);
+            setTamaño(tamaño + .3);
         } else {
-            setTamaño(tamaño -= .5);
+            setTamaño(tamaño - .3);
         }
     }
     const descargar = () => {
@@ -44,13 +44,11 @@ const Meme = () => {
         <div className='todo'>
             <h1 className="titulo">¡CREÁ TU PROPIO MEME!</h1>
             <div className='contenedor'>
-                {/* <figure className="meme-terminado"> */}
-                    <div className="contenedor-meme" style={{ backgroundImage: `url(./img/${imgmeme}.jpg)`, backgroundSize: '100%', backgroundRepeat: 'no-repeat', backgroundPositionY: "center" }}>
-                        <div className={`contenedor-texto ${alineartextoY}`}>
-                            <h1 style={{ color: colortexto, fontSize: `${tamaño}rem` }}>{textmeme}</h1>
-                        </div>
+                <div className="contenedor-meme" style={{ backgroundImage: `url(./img/${imgmeme}.jpg)`, backgroundSize: '100%', backgroundRepeat: 'no-repeat', backgroundPositionY: "center" }}>
+                    <div className={`contenedor-texto ${alineartextoY}`}>
+                        <h1 style={{ color: colortexto, fontSize: `${tamaño}rem` }}>{textmeme}</h1>
                     </div>
-                {/* </figure> */}
+                </div>
                 <div className="contenedor-settings">
                     <div className='setting'>
                         <h2>Elegí la imagen del meme</h2>
